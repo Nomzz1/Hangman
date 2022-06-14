@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <style>
+            button{
+                background-color:white;
+                color:black;
+                border-color:black;
+            }
+            .class{
+                height:25px;
+                width:25px;
+                position:absolute;
+                border-radius:10px;
+                font-family:Verdana;
+            }
+        </style>
+        <h1 style = "width:500px;text-align:center;font-family:Verdana;">Hangman!</h1>
+        <div id = "resetbutton" style = "text-align:center;width:500px;"></div>
+        <div style = "height:50px;display:none;" id = "buttonWidth">
+            <p id = "/"></p>
+            <button class = "class" style = "top:70px;left:10px;" id = "A" onclick = "guess(A)">A</button>
+            <button class = "class" style = "top:70px;left:45px;" id = "B" onclick = "guess(B)">B</button>
+            <button class = "class" style = "top:70px;left:80px;" id = "C" onclick = "guess(C)">C</button>
+            <button class = "class" style = "top:70px;left:115px;" id = "D" onclick = "guess(D)">D</button>
+            <button class = "class" style = "top:70px;left:150px;" id = "E" onclick = "guess(E)">E</button>
+            <button class = "class" style = "top:70px;left:185px;" id = "F" onclick = "guess(F)">F</button>
+            <button class = "class" style = "top:70px;left:220px;" id = "G" onclick = "guess(G)">G</button>
+            <button class = "class" style = "top:70px;left:255px;" id = "H" onclick = "guess(H)">H</button>
+            <button class = "class" style = "top:70px;left:290px;" id = "I" onclick = "guess(I)">I</button>
+            <button class = "class" style = "top:70px;left:325px;" id = "J" onclick = "guess(J)">J</button>
+            <button class = "class" style = "top:70px;left:360px;" id = "K" onclick = "guess(K)">K</button>
+            <button class = "class" style = "top:70px;left:395px;" id = "L" onclick = "guess(L)">L</button>
+            <button class = "class" style = "top:70px;left:430px;" id = "M" onclick = "guess(M)">M</button>
+            <button class = "class" style = "top:70px;left:465px;" id = "N" onclick = "guess(N)">N</button>
+            <button class = "class" style = "top:105px;left:45px;" id = "O" onclick = "guess(O)">O</button>
+            <button class = "class" style = "top:105px;left:80px;" id = "P" onclick = "guess(P)">P</button>
+            <button class = "class" style = "top:105px;left:115px;" id = "Q" onclick = "guess(Q)">Q</button>
+            <button class = "class" style = "top:105px;left:150px;" id = "R" onclick = "guess(R)">R</button>
+            <button class = "class" style = "top:105px;left:185px;" id = "S" onclick = "guess(S)">S</button>
+            <button class = "class" style = "top:105px;left:220px;" id = "T" onclick = "guess(T)">T</button>
+            <button class = "class" style = "top:105px;left:255px;" id = "U" onclick = "guess(U)">U</button>
+            <button class = "class" style = "top:105px;left:290px;" id = "V" onclick = "guess(V)">V</button>
+            <button class = "class" style = "top:105px;left:325px;" id = "W" onclick = "guess(W)">W</button>
+            <button class = "class" style = "top:105px;left:360px;" id = "X" onclick = "guess(X)">X</button>
+            <button class = "class" style = "top:105px;left:395px;" id = "Y" onclick = "guess(Y)">Y</button>
+            <button class = "class" style = "top:105px;left:430px;" id = "Z" onclick = "guess(Z)">Z</button>
+        </div>
+        <div id = "wordChoice" style = "text-align:center;width:500px;">
+            <button style = "border-radius:10px;" onclick = "ownWord()">Choose your own word.</button>
+            <button style = "border-radius:10px;" onclick = "randomWord()">Generate a random word.</button>
+        </div>
+        <div style = "width:500px;">
+            <h1 id = "Word" style = "text-align:center;font-family:Verdana;"></h1>
+        </div>
+        <div style = "width:500px;text-align:center;">
+            <img id = "img" src = "">
+        </div>
+        <div style = "width:500px;">
+            <h1 id = "win message" style = "text-align:center;font-family:Verdana;"></h1>
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>
